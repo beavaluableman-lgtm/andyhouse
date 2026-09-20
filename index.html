@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安迪好室 | 找到您理想的家</title>
+<meta name="description" content="安迪好室 - 提供買屋、賣屋、租屋服務,精選優質房源,專業團隊為您服務。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo logo-brand"><img src="images/logo.jpg" alt="安迪好室">安迪<span>好室</span></a>
+    <nav class="nav" id="mainNav">
+      <a href="#home">首頁</a>
+      <a href="#listings">精選房源</a>
+      <a href="#services">服務項目</a>
+      <a href="#about">關於我們</a>
+      <a href="#testimonials">客戶評價</a>
+      <a href="#contact">聯絡我們</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary header-cta">免費估價</a>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>找到您人生下一個<span>理想的家</span></h1>
+    <p>安迪好室深耕在地市場十五年,提供買屋、賣屋、租屋一站式服務,值得信賴的房地產夥伴。</p>
+
+    <form class="search-box" id="searchForm">
+      <div class="search-field">
+        <label for="searchLocation">地區</label>
+        <select id="searchLocation">
+          <option value="">全部地區</option>
+          <option value="信義區">信義區</option>
+          <option value="大安區">大安區</option>
+          <option value="中山區">中山區</option>
+          <option value="板橋區">板橋區</option>
+          <option value="新莊區">新莊區</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label for="searchType">類型</label>
+        <select id="searchType">
+          <option value="">不限類型</option>
+          <option value="住宅">住宅大樓</option>
+          <option value="華廈">華廈</option>
+          <option value="透天">透天厝</option>
+          <option value="套房">套房</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label for="searchPrice">價格區間</label>
+        <select id="searchPrice">
+          <option value="">不限價格</option>
+          <option value="0-1000">1000萬以下</option>
+          <option value="1000-2000">1000萬-2000萬</option>
+          <option value="2000-3500">2000萬-3500萬</option>
+          <option value="3500-99999">3500萬以上</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary search-btn">搜尋房源</button>
+    </form>
+
+    <div class="hero-stats">
+      <div><strong>1,200+</strong><span>成交案件</span></div>
+      <div><strong>15</strong><span>年專業經驗</span></div>
+      <div><strong>98%</strong><span>客戶滿意度</span></div>
+      <div><strong>30+</strong><span>專業顧問</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Listings -->
+<section class="listings" id="listings">
+  <div class="container">
+    <div class="section-head">
+      <h2>精選房源</h2>
+      <p>嚴選優質物件,每一間都經過專業團隊實地考察</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="住宅">住宅大樓</button>
+      <button class="filter-btn" data-filter="華廈">華廈</button>
+      <button class="filter-btn" data-filter="透天">透天厝</button>
+      <button class="filter-btn" data-filter="套房">套房</button>
+    </div>
+
+    <div class="listing-grid" id="listingGrid"></div>
+
+    <div class="listing-more">
+      <button class="btn btn-outline" id="loadMoreBtn">載入更多房源</button>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>服務項目</h2>
+      <p>從買賣到租賃,提供全方位不動產服務</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>房屋買賣</h3>
+        <p>專業估價與媒合服務,協助您以最合理的價格買到或賣出房產。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔑</div>
+        <h3>租賃服務</h3>
+        <p>提供完整租屋媒合與代管服務,保障房東房客雙方權益。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📐</div>
+        <h3>免費估價</h3>
+        <p>結合大數據與在地經驗,提供精準市場行情分析報告。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📄</div>
+        <h3>法律諮詢</h3>
+        <p>合作專業地政士與律師,確保每筆交易安全無虞。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>裝修規劃</h3>
+        <p>媒合優質裝修團隊,打造理想居家空間。</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💰</div>
+        <h3>貸款諮詢</h3>
+        <p>合作多家銀行,協助您找到最合適的房貸方案。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="container about-inner">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80" alt="專業房仲團隊">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">關於安迪好室</span>
+      <h2>值得您信賴的<br>不動產夥伴</h2>
+      <p>安迪好室成立於 2011 年,秉持「誠信、專業、用心」的服務理念,深耕大台北地區房地產市場已逾十五年。我們擁有超過 30 位持證專業經紀人,累積上千件成功成交案例。</p>
+      <ul class="about-list">
+        <li>✔ 全程透明化交易流程,杜絕資訊不對稱</li>
+        <li>✔ 專屬顧問一對一服務,從看屋到交屋全程陪伴</li>
+        <li>✔ 結合科技與大數據,提供精準市場分析</li>
+        <li>✔ 合作金融機構多元,貸款方案彈性最大化</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary">立即諮詢</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head light">
+      <h2>客戶怎麼說</h2>
+      <p>真實客戶的成交故事</p>
+    </div>
+    <div class="testimonial-viewport">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <p>"服務團隊非常專業,從看屋到簽約都給予詳細說明,順利買到夢想中的房子!"</p>
+          <div class="testimonial-author">— 陳先生,信義區買家</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"賣屋過程完全不用煩惱,顧問幫忙處理所有細節,價格也談到理想水準。"</p>
+          <div class="testimonial-author">— 林小姐,大安區屋主</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"租屋糾紛處理得很好,推薦給所有需要找房子的朋友!"</p>
+          <div class="testimonial-author">— 王先生,租屋客戶</div>
+        </div>
+        <div class="testimonial-card">
+          <p>"顧問非常有耐心,幫我分析每個物件的優缺點,最終選到最適合的房子。"</p>
+          <div class="testimonial-author">— 張小姐,板橋區買家</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button id="testimonialPrev" aria-label="上一則">‹</button>
+      <button id="testimonialNext" aria-label="下一則">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="container contact-inner">
+    <div class="contact-info">
+      <span class="eyebrow">聯絡我們</span>
+      <h2>準備好開始了嗎?</h2>
+      <p>不論是買屋、賣屋或租屋需求,歡迎與我們聯繫,專業顧問將盡快與您聯絡。</p>
+      <ul class="contact-details">
+        <li><strong>電話</strong>02-1234-5678</li>
+        <li><strong>Email</strong>service@anjia-realty.example</li>
+        <li><strong>地址</strong>台北市信義區松高路 1 號 10 樓</li>
+        <li><strong>營業時間</strong>週一至週日 09:00 - 21:00</li>
+      </ul>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">姓名 *</label>
+          <input type="text" id="name" required placeholder="請輸入您的姓名">
+        </div>
+        <div class="form-field">
+          <label for="phone">電話 *</label>
+          <input type="tel" id="phone" required placeholder="請輸入聯絡電話">
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="請輸入電子信箱">
+      </div>
+      <div class="form-field">
+        <label for="interest">諮詢類型</label>
+        <select id="interest">
+          <option value="buy">我想買房</option>
+          <option value="sell">我想賣房</option>
+          <option value="rent">我想租房</option>
+          <option value="other">其他諮詢</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="message">訊息內容</label>
+        <textarea id="message" rows="4" placeholder="請簡述您的需求"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary form-submit">送出諮詢</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="logo logo-brand"><img src="images/logo.jpg" alt="安迪好室">安迪<span>好室</span></div>
+      <p>值得信賴的不動產夥伴,協助您找到理想的家。</p>
+    </div>
+    <div class="footer-links">
+      <h4>快速連結</h4>
+      <a href="#home">首頁</a>
+      <a href="#listings">精選房源</a>
+      <a href="#services">服務項目</a>
+      <a href="#about">關於我們</a>
+      <a href="#contact">聯絡我們</a>
+    </div>
+    <div class="footer-links">
+      <h4>服務項目</h4>
+      <a href="#services">房屋買賣</a>
+      <a href="#services">租賃服務</a>
+      <a href="#services">免費估價</a>
+      <a href="#services">貸款諮詢</a>
+    </div>
+    <div class="footer-contact">
+      <h4>聯絡資訊</h4>
+      <p>02-1234-5678</p>
+      <p>service@anjia-realty.example</p>
+      <p>台北市信義區松高路 1 號 10 樓</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 安迪好室 Andy House. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Property Modal -->
+<div class="modal" id="propertyModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose" aria-label="關閉">&times;</button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="回到頂端">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
